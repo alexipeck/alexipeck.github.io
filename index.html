@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="utf-8">
-    <title>Recorder</title>
+    <title>Words</title>
     <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css">
     <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" />
@@ -11,6 +11,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons&amp;display=block" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="manifest" href="./manifest.json">
+    
+    <script>
+      // register ServiceWorker
+      window.onload = () => {
+          'use strict';
+
+          if ('serviceWorker' in navigator) {
+              navigator.serviceWorker
+                      .register('./service_worker.js');
+          }
+      }
+  </script>
+
   
 <link rel="preload" href="./index-210025620109d996_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
 <link rel="modulepreload" href="./index-210025620109d996.js"></head>
