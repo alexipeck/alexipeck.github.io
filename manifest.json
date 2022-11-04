@@ -1,5 +1,5 @@
 {
-    "name": "Words (Yew Progressive Web App)",
+    "name": "Dictionary (Yew Progressive Web App)",
     "short_name": "Words (Yew PWA)",
     "icons": [{
       "src": "./icon-256.png",
