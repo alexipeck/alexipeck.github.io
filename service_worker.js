@@ -2,8 +2,8 @@ var cacheName = 'yew-pwa';
 var filesToCache = [
   './',
   './index.html',
-  './index-3998acea0d512f95.js',
-  './index-3998acea0d512f95_bg.wasm',
+  './index-34a68bf856e2b59.js',
+  './index-34a68bf856e2b59_bg.wasm',
 ];
 
 

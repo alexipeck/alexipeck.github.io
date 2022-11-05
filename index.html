@@ -4,7 +4,7 @@
     <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css">
     <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    <link rel="stylesheet" href="./index-b4e1cfe6bb35958e.css">
+    <link rel="stylesheet" href="/index-b4e1cfe6bb35958e.css">
     <link rel="manifest" href="./manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons&amp;display=block" rel="stylesheet">
@@ -25,7 +25,33 @@
     </script>
 
   
-<link rel="preload" href="./index-8b39076179a36bfc_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="./index-8b39076179a36bfc.js"></head>
+<link rel="preload" href="/index-34a68bf856e2b59_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-34a68bf856e2b59.js"></head>
 <body>
-<script type="module">import init from './index-8b39076179a36bfc.js';init('./index-8b39076179a36bfc_bg.wasm');</script></body></html>
+<script type="module">import init from '/index-34a68bf856e2b59.js';init('/index-34a68bf856e2b59_bg.wasm');</script><script>(function () {
+    var url = 'ws://' + window.location.host + '/_trunk/ws';
+    var poll_interval = 5000;
+    var reload_upon_connect = () => {
+        window.setTimeout(
+            () => {
+                // when we successfully reconnect, we'll force a
+                // reload (since we presumably lost connection to
+                // trunk due to it being killed, so it will have
+                // rebuilt on restart)
+                var ws = new WebSocket(url);
+                ws.onopen = () => window.location.reload();
+                ws.onclose = reload_upon_connect;
+            },
+            poll_interval);
+    };
+
+    var ws = new WebSocket(url);
+    ws.onmessage = (ev) => {
+        const msg = JSON.parse(ev.data);
+        if (msg.reload) {
+            window.location.reload();
+        }
+    };
+    ws.onclose = reload_upon_connect;
+})()
+</script></body></html>
