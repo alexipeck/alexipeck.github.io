@@ -2,10 +2,9 @@ var cacheName = 'yew-pwa';
 var filesToCache = [
   './',
   './index.html',
-  './index-6a1b6d15c05c55ba.js',
-  './index-6a1b6d15c05c55ba_bg.wasm',
+  './index-f8c4dec785e3d1ea.js',
+  './index-f8c4dec785e3d1ea_bg.wasm',
 ];
-
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener('install', function(e) {
