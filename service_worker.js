@@ -1,9 +1,9 @@
-var cacheName = 'yew-pwa';
+var cacheName = 'dictionary';
 var filesToCache = [
   './',
   './index.html',
-  './index-9037b823a5e7f5bc.js',
-  './index-9037b823a5e7f5bc_bg.wasm',
+  './index-463d27415d5b6967.js',
+  './index-463d27415d5b6967_bg.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */
