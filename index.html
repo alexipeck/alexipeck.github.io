@@ -1,18 +1,12 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="utf-8">
     <title>Words</title>
-    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css">
-    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
-    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    <link rel="stylesheet" href="/index-5866a9aba32d7853.css">
+    <link rel="stylesheet" href="/index-efac74a7011d37e8.css">
     <link rel="manifest" href="./manifest.json">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons&amp;display=block" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     
-    <link rel="manifest" href="./manifest.json">
     
     <script>
       // register ServiceWorker
@@ -25,33 +19,7 @@
     </script>
 
   
-<link rel="preload" href="/index-45372f53c3c38b6a_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-45372f53c3c38b6a.js"></head>
+<link rel="preload" href="/index-d182962cf8367f70_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-d182962cf8367f70.js"></head>
 <body>
-<script type="module">import init from '/index-45372f53c3c38b6a.js';init('/index-45372f53c3c38b6a_bg.wasm');</script><script>(function () {
-    var url = 'ws://' + window.location.host + '/_trunk/ws';
-    var poll_interval = 5000;
-    var reload_upon_connect = () => {
-        window.setTimeout(
-            () => {
-                // when we successfully reconnect, we'll force a
-                // reload (since we presumably lost connection to
-                // trunk due to it being killed, so it will have
-                // rebuilt on restart)
-                var ws = new WebSocket(url);
-                ws.onopen = () => window.location.reload();
-                ws.onclose = reload_upon_connect;
-            },
-            poll_interval);
-    };
-
-    var ws = new WebSocket(url);
-    ws.onmessage = (ev) => {
-        const msg = JSON.parse(ev.data);
-        if (msg.reload) {
-            window.location.reload();
-        }
-    };
-    ws.onclose = reload_upon_connect;
-})()
-</script></body></html>
+<script type="module">import init from '/index-d182962cf8367f70.js';init('/index-d182962cf8367f70_bg.wasm');</script></body></html>
