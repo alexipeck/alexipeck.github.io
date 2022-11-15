@@ -2,8 +2,8 @@ var cacheName = 'dictionary';
 var filesToCache = [
   './',
   './index.html',
-  './index-5be25914c97f31af.js',
-  './index-5be25914c97f31af_bg.wasm',
+  './index-24e987a4dcb8218f.js',
+  './index-24e987a4dcb8218f_bg.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */

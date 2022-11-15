@@ -1,6 +1,6 @@
 {
-    "name": "Dictionary (Yew Progressive Web App)",
-    "short_name": "Words (Yew PWA)",
+    "name": "Dictionary",
+    "short_name": "Dictionary",
     "icons": [{
       "src": "./icon-256.png",
         "sizes": "256x256",
@@ -9,6 +9,6 @@
     "lang": "en-US",
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "white",
-    "theme_color": "white"
+    "background_color": "black",
+    "theme_color": "black"
 }
